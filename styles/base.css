@@ -32,14 +32,13 @@ header {
   padding: 5px;
   text-align: center;
   font-size: 12px;
-  transition: 0.2;
   border-radius: 10px;
   transition: background-color 0.2s;
 }
 
 .navigation a:hover {
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 main {
@@ -60,7 +59,7 @@ main .container {
 main .card {
   padding: 15px;
   gap: 10px;
-  box-shadow:0 0 5px gray;
+  box-shadow:0 0 5px #808080;
   border-radius: 10px;
   background-color: #d8f4ff;
 }
@@ -69,7 +68,7 @@ main .card {
   border-radius: 5px;
   box-shadow: 0 0 0.5px;
 }
-.card h3 {
+.card h2 {
   text-align: center;
 }
 .aboutme {
