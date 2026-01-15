@@ -17,6 +17,11 @@ header {
   color: #ffffff; 
   font-size: 20px;  
 }
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
 .navigation ul {
   display: flex;
   flex-wrap: wrap;
@@ -43,65 +48,75 @@ header {
 }
 
 main {
-  background-color: #ffffff;
-  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
-}
-main h1 {
-  text-align: center;
-  margin-top: 0;
-}
-main .container {
+  padding: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
-main .card {
+
+main h1 {
+  grid-column: span 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  row-gap: 30px;
   padding: 15px;
-  gap: 10px;
-  box-shadow:0 0 5px #808080;
+  box-shadow: 0 0 5px #808080;
   border-radius: 10px;
   background-color: #d8f4ff;
 }
-.card img {
+
+.card:first-of-type h2 {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 0;
+}
+
+.card:first-of-type p {
+  margin: 0;
+}
+
+.card:first-of-type img {
   width: 180px;
   border-radius: 5px;
-  box-shadow: 0 0 0.5px;
+  object-fit: cover;
+  justify-self: end;
 }
-.card h2 {
+
+.card:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 0 5px #808080;
+  border-radius: 10px;
+  background-color: #d8f4ff;
+}
+
+.card:last-of-type h2 {
+  margin-top: 0;
   text-align: center;
 }
-.aboutme {
-  display: grid;
-  grid-template-columns: 2fr auto ;
-  padding: 10px;
-  gap: 1.5rem;
-  align-items:center;
-  box-shadow: 0 0 2px gray;
-  border-radius: 5px;
-  background-color: #ffffff;
+
+.card:last-of-type p {
+  text-align: center;
+  margin: 10px 0;
 }
-.chiclayo {
-  display: grid;
-  grid-template-columns: 2fr auto;
-  padding: 10px;
-  gap: 1.5rem;
-  align-items: center;
-  box-shadow: 0 0 2px gray;
+
+.card:last-of-type img {
+  width: 180px;
   border-radius: 5px;
-  background-color: #ffffff;
+  object-fit: cover;
+  margin-top: 10px;
 }
-.interests {
-  display: grid;
-  grid-template-columns: 2fr auto;
-  padding: 10px;
-  gap: 1.5rem;
-  align-items: center;
-  box-shadow: 0 0 2px gray;
-  border-radius: 5px;
-  background-color: #ffffff;
-}
+
 footer {
   background-color: #2A4B7C;
   color: #ffffff;
