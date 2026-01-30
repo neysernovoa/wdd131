@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #2aae52;
+  --primary-color-rgb: 42, 174, 82;
+  --primary-color: rgb(42, 174, 82);
   --secondary-color: rgb(255, 255, 255);
   --bg-opacity: 0.5;
   --shadow-color: rgba(0, 0, 0, 0.3);
@@ -79,7 +80,7 @@ section h2 {
   }
 
   section h2{
-    background-color: rgba(42, 174, 82, var(--bg-opacity));
+    background-color: rgba(var(--primary-color-rgb), var(--bg-opacity));
     padding: var(--padding-card);
   }
 
