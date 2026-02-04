@@ -1,0 +1,10 @@
+main {
+  display: block;
+}
+@media (min-width: 780px) {
+  main{
+    display: grid;
+    gap: 1rem;
+  }
+  
+}
