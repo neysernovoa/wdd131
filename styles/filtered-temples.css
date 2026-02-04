@@ -58,20 +58,11 @@ main {
 main h2 {
   text-align: center;
 }
-figure {
-  margin: 0;
-  padding: 0px;
-}
-figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: block;
-}
-figcaption {
-  text-align: center;
-  padding: 5px;
-  font-weight: bold;
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 footer {
