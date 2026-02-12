@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #e6e6e6;
+}
+header {
+  background-color: #4a0033;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+
+main {
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: #d3ccd2;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #999;
+  background-color: #f4f4f4;
+}
+
+textarea {
+  height: 140px;
+}
+
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.star-option {
+  text-align: center;
+}
+
+.star-option span {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.star-option input {
+  width: 22px;
+  height: 22px;
+}
+
+
+fieldset label {
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.optional {
+  color: #1a2a8a;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+
+.submit-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-color: #e6e6e6;
+  border: 2px solid #777;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #d9d9d9;
+}
+
+/* FOOTER */
+footer {
+  background-color: #4a0033;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
