@@ -127,13 +127,22 @@ input[type="checkbox"] {
   background-color: #d9d9d9;
 }
 
-/* FOOTER */
 footer {
   background-color: #4a0033;
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .stars {
+    flex-direction: column;
+  }
 }
 
 footer p {
