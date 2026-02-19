@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Lambayeque</title>
+  <meta name="description" content="Use this page to generate a journey to discover Lambayeque .">
+  <meta name="author" content="Neyser Novoa">
+  <script src="scripts/project.js" defer></script>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <header>
+    <h1>Discover Lambayeque</h1>
+    <nav>
+      <ul>
+        <li><a href="#generate-tour">Generate Tour</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <main>
+    <section id="generate-tour" class="journey-section">
+      <h2>Plan Your Journey</h2>
+      <p>Select up to four places to build your tour.</p>
+      <div id="places-container"></div>
+      <button type="button" id="generate-button" class="primary-button">Generate My Tour</button>
+      <div id="tour-result"></div>
+    </section> 
+  
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>We are passionate about showcasing the best places in Lambayeque and helping travelers create unforgettable journeys.
+      Our mission is to connect visitors with the rich culture, history, and natural beauty of the region.
+      From exploring ancient archaeological sites to relaxing on the beautiful beaches, we provide curated tours that suit all
+      interests.
+      Our team researches each location carefully to provide accurate information, tips, and recommendations to make your
+      experience enjoyable and memorable.
+      Whether you are a first-time visitor or returning to discover more, our website guides you in planning the perfect
+      Lambayeque adventure.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+        <p>&copy; 2026 Neyser Novoa | <a href="references.html" target="_blank">References</a></p>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,270 @@
+
+#places-container img {
+  cursor: pointer;
+}
+
+.selected {
+  opacity: 0.6;
+}
+
+
+:root {
+  --platinum: #e7ecefff;
+  --dusk-blue: #274c77ff;
+  --steel-blue: #6096baff;
+  --icy-blue: #a3cef1ff;
+  --grey-olive: #000000ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--platinum);
+  color: var(--dusk-blue);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--dusk-blue);
+  color: var(--platinum);
+  padding: 1rem;
+  
+  
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--platinum);
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+#places-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+figure {
+  background-color: var(--platinum);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+figure:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  display: block;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+
+figure img.selected {
+  transform: scale(1.05);
+  border: 3px solid var(--steel-blue);
+}
+
+figure figcaption {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+figure p {
+  font-size: 0.9rem;
+  color: var(--grey-olive);
+  margin-top: 0.25rem;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--dusk-blue);
+  color: var(--platinum);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.primary-button:hover {
+  background-color: var(--icy-blue);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--platinum);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--grey-olive);
+}
+
+#contact button {
+  padding: 0.5rem 1rem;
+  background-color: var(--dusk-blue);
+  color: var(--platinum);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: var(--icy-blue);
+}
+
+footer {
+  background-color: var(--dusk-blue);
+  color: var(--platinum);
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--platinum);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media(min-width: 700px) {
+  #places-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--platinum);
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+}
+
+@media(min-width: 900px) {
+  #places-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--platinum);
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+}
+
+#generated-tour {
+  padding: 1rem;
+}
+#tour-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+  padding: 1rem;
+    
+}
+
+
+@media (min-width: 700px) {
+  #generated-tour {
+    padding: 20px;
+  }
+  #tour-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px;
+  }
+  
+}
+
+#references-container,
+ul {
+  padding: 1rem;
+  gap: 1rem;
+}
+
+
+    
+
